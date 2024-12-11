@@ -66,7 +66,7 @@ function App() {
           }
         ></Route>
 
-        <Route path="/*" element={<Auth />}></Route>
+{/*         <Route path="/*" element={<Auth />}></Route> */}
         <Route path="/error" element={<ErrorPage />}></Route>
         <Route path="/loading" element={<LoadingPage />}></Route>
       </Routes>
