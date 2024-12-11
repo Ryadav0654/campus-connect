@@ -3,9 +3,9 @@ import { Navigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 const AuthRoute = ({ children }) => {
-    const { token } = useSelector((state) => state.auth); // Get token from Redux state
+    const { accessToken } = useSelector((state) => state.auth); // Get token from Redux state
 
-    return !token ? children : <Navigate to="/" />;
+    return !accessToken ? children : <Navigate to="/" />;
 };
 
 export default AuthRoute;
